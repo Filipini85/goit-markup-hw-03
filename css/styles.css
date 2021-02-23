@@ -155,14 +155,16 @@ p {
 
 .container {
   width: 1200px;
-  padding: 0 15px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
 
 /* Герой */
-.hero .container {
+.hero {
   background-color: var(--background-hero);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -173,7 +175,6 @@ p {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -191,7 +192,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  margin-bottom: 200px;
+  padding: 0px;
 }
 
 /* Приемущества */
@@ -203,6 +204,7 @@ p {
 }
 
 .features-item {
+  flex-basis: calc(100% / 4 - 30px);
   padding-top: 94px;
   padding-bottom: 94px;
   margin-right: 30px;
@@ -212,18 +214,15 @@ p {
   margin-right: 0px;
 }
 
-.features-item {
-  flex-basis: calc(100% / 4 - 30px);
-}
-
 .features-title {
   color: var(--title-text);
   font-weight: 700;
   font-size: 14px;
+  font-style: normal;
   line-height: 1.21;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -274,9 +273,7 @@ p {
 .team-item {
   background-color: #ffffff;
   width: 270px;
-  height: 368px;
-  left: 518px;
-  top: 1636px;
+
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -367,6 +364,7 @@ p {
 
 .footer-items:not(:last-child) {
   padding-bottom: 9px;
+  margin-bottom: 0px;
 }
 
 /* Портфолио */
@@ -393,7 +391,7 @@ p {
 .buttons {
   display: flex;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 50px;
   margin: 0px;
   padding-left: 0;
   justify-content: center;
