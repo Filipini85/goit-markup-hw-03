@@ -196,6 +196,11 @@ p {
 }
 
 /* Приемущества */
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features {
   display: flex;
   margin: 0px;
@@ -205,8 +210,6 @@ p {
 
 .features-item {
   flex-basis: calc(100% / 4 - 30px);
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-right: 30px;
 }
 
@@ -234,14 +237,32 @@ p {
 }
 
 /* Чем мы занимаемся */
-.activity-images {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
+.activity-section {
   padding-bottom: 94px;
 }
+
+.activity-images {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.activity-item:not(:last-child) {
+  width: 370px;
+  margin-right: 30px;
+}
+
+/*.activity-images {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  flex-basis: calc(100% / 3 - 30px);
+  justify-content: space-between;
+}
+
+.activity-item {
+  flex-basis: calc(100% / 3 - 30px);
+}*/
 
 .activity {
   color: var(--title-text);
@@ -256,6 +277,8 @@ p {
 /* Наша команда */
 .team-section {
   background-color: var(--backgound-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list {
@@ -263,7 +286,6 @@ p {
   margin: 0px;
   padding: 0px;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 
 .team-item {
@@ -280,10 +302,6 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item {
-  flex-basis: calc(100% / 4 - 30px);
-}
-
 .team-header {
   color: var(--title-text);
   font-weight: 700;
@@ -291,7 +309,6 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
